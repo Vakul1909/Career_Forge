@@ -1,0 +1,224 @@
+.roadmap-root {
+  min-height: 100vh;
+  background: #09090b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.roadmap-root .home-btn {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  background: linear-gradient(135deg, #120e5c, #180f81); 
+  color: white;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 9999;
+}
+.roadmap-root .home-btn:hover {
+   background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.roadmap-root .title {
+  font-size: 2.5rem;
+  color: #818cf8;
+  margin-bottom: 1.5rem;
+}
+.roadmap-box {
+  width: 100%;
+  max-width: 600px;
+  background: #18181b;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem;
+  margin-bottom: 1.5rem;      
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.roadmap-grid .select-card:last-child {
+  grid-column: 1 / -1;   
+  width: 55%;     
+  margin: 0 auto;       
+}
+@media (max-width: 768px) {
+  .roadmap-grid .select-card:last-child {
+    width: 100%;
+  }
+}
+.select-card {
+   background: #020617;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+.select-label {
+ display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.select-card select {
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+}
+.select-card select:hover {
+  background: #020617;
+}
+.select-card select option {
+  background: #18181b;
+  color: white;
+}
+.error-text {
+  text-align: center;
+  color: #f87171;
+  margin-bottom: 20px;
+}
+.generate-btn {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 18px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  color: white;
+}
+.generate-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.roadmap-result {
+  max-width: 1200px;
+  margin: auto;
+}
+.roadmap-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #818cf8;
+  margin-bottom: 1.5rem;
+}
+.roadmap-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.roadmap-card {
+  background: #020617;
+  padding: 24px;
+  border-radius: 20px;
+  
+}
+.roadmap-card h3 {
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+.roadmap-card ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+.roadmap-card li {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+.outcome {
+  margin-top: 10px;
+  color: #a5b4fc;
+  font-weight: 600;
+}
+.roadmap-graph {
+  margin-top: 80px;
+}
+.timeline {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 30px;
+}
+.timeline-item {
+  min-width: 240px;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .timeline-item {
+    min-width: 200px;
+  }
+}
+.timeline-dot {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  z-index: 2;
+}
+.timeline-line {
+  position: absolute;
+  top: 22px;
+  left: 60%;
+  width: 100%;
+  height: 4px;
+  background: #1e3a8a;
+  z-index: 1;
+}
+.timeline-content {
+  margin-top: 20px;
+  background: #020617;
+  padding: 16px;
+  border-radius: 18px;
+}
+.timeline-content h3 {
+  color: #93c5fd;
+  margin-bottom: 6px;
+}
+.back-btn {
+ margin: 25px auto 0;        
+  display: block;  
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  padding: 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  width: 30%;
+}
+.back-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
