@@ -42,17 +42,11 @@
   padding: 30px;
   border-radius: 14px;
   text-align: center;
-  border: 1px solid rgba(129, 140, 248, 0.3);
-  transition: transform 0.3s ease, border-color 0.3s ease;
   height: 260px;          
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-}
-.feature-card:hover {
-  transform: translateY(-8px);
-  border-color: #818cf8;
 }
 .feature-card h2 {
   color: #a5b4fc;
@@ -114,7 +108,6 @@
   background: #18181b;
   padding: 25px;
   border-radius: 12px;
-  border: 1px solid rgba(129, 140, 248, 0.3);
   transition: 0.3s;
 }
 .why-card h3 {
@@ -125,10 +118,6 @@
   color: #cfcfd1;
   font-size: 15px;
   line-height: 1.5;
-}
-.why-card:hover {
-  transform: translateY(-5px);
-  border-color: #818cf8;
 }
 .features-section {
   text-align: center;
