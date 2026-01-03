@@ -24,7 +24,7 @@ const API_KEY = import.meta.env.VITE_RAPIDAPI_KEY;
       setError("Please fill all fields before searching.");
       setTimeout(() => {
         setError("");
-      }, 3000);
+      }, 2000);
       return;
     }
     setError("");

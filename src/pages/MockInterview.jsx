@@ -34,7 +34,7 @@ const MockInterview = () => {
   const resultRef = useRef(null);
   const showError = (msg) => {
     setError(msg);
-    setTimeout(() => setError(""), 3000);
+    setTimeout(() => setError(""), 2000);
   };
   const generateQuestion = async () => {
     setError("");

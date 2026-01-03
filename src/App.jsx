@@ -1,11 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import MockInterview from "./pages/MockInterview";
 import JobFinder from "./pages/JobFinder";
 import Roadmap from "./pages/Roadmap";
+
+
 
 const App = () => {
   return (
@@ -18,6 +21,7 @@ const App = () => {
         <Route path="/job-finder" element={<JobFinder />} />
         <Route path="/roadmap" element={<Roadmap />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };

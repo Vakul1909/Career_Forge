@@ -58,3 +58,7 @@ Step-by-step guidance including courses, tutorials, and practical projects.
 Tracks your progress and suggests the next learning milestone.
 
 Helps users identify skill gaps and focus on high-priority areas.
+
+## Author
+**Vakul Mittal**  
+ 

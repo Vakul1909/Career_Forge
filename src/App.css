@@ -11,3 +11,11 @@
 .prose {
   max-width: 100%;
 }
+.footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: #9ca3af;
+  border-top: 1px solid #27272a;
+  margin-top: 40px;
+}

@@ -151,7 +151,7 @@ Return ONLY valid JSON in this format:
                   ))}
                 </ul>
                 <p><b>Tools:</b> {step.tools.join(", ")}</p>
-                <p className="outcome">🎯 {step.outcome}</p>
+                <p className="outcome"> {step.outcome}</p>
               </div>
             ))}
           </div>

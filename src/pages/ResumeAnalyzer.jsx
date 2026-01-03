@@ -44,7 +44,7 @@ const ResumeAnalyzer = () => {
   };
   const showError = (msg) => {
     setError(msg);
-    setTimeout(() => setError(""), 3000);
+    setTimeout(() => setError(""), 2000);
   };
   const analyzeResume = async () => {
     setError("");
