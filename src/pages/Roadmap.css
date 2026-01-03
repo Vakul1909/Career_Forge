@@ -105,14 +105,14 @@
 }
 .generate-btn {
   width: 100%;
-  padding: 1.2rem;
-  border-radius: 18px;
-  border: none;
-  font-size: 1.1rem;
-  font-weight: 700;
-  cursor: pointer;
-  background: linear-gradient(135deg, #312e81, #4f46e5);
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
   color: white;
+  padding: 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
 }
 .generate-btn:hover {
   background: linear-gradient(135deg, #6366f1, #4f46e5);
@@ -211,10 +211,10 @@
   display: block;  
   background: linear-gradient(135deg, #4f46e5, #3730a3);
   color: white;
-  padding: 0.85rem;
+  padding: 0.75rem;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   width: 30%;
